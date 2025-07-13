@@ -12,6 +12,22 @@ class WeatherFetcher:
         if city in self.cache:
             return self.cache[city]
 
+        def fetch_weather(self, city):
+        if city in self.cache:
+            return self.cache[city]
+
+        def fetch_weather(self, city):
+        if city in self.cache:
+            return self.cache[city]
+
+        def fetch_weather(self, city):
+        if city in self.cache:
+            return self.cache[city]
+
+        def fetch_weather(self, city):
+        if city in self.cache:
+            return self.cache[city]
+
         params = {
             "key": self.api_key,
             "q": city
@@ -42,6 +58,11 @@ class WeatherFetcher:
                 break
 
             try:
+                weather_data = self.fetch_weather(city)
+                self.display_weather(weather_data)
+                self.save_to_file(weather_data, city)
+            except Exception as e:
+                   try:
                 weather_data = self.fetch_weather(city)
                 self.display_weather(weather_data)
                 self.save_to_file(weather_data, city)
