@@ -1,0 +1,10 @@
+review:
+  mode: auto  # other options: manual, smart
+  languages:
+    - python
+  exclude:
+    - tests/
+    - migrations/
+commenting:
+  style: inline
+  summarize: true
