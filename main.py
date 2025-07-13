@@ -1,7 +1,7 @@
 from utils import divide, is_even
 
 def main():
-        print("Hello from CodeRabbit Test!")
+        print("Hello from CodeR Test!")
     a = 10
     b = 0  # Intentional divide-by-zero
     try:
