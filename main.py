@@ -14,6 +14,7 @@ def main():
             print(f"{i} is even")
         else:
             print(f"{i} is odd")
+                print(f"{i} is odd")
 
 if __name__ == "__main__":
     main()
