@@ -1,33 +1,33 @@
 # craft-cloud.yaml
-# Valid Craft Cloud configuration file
+# Valid Craft Cloud configuration file (fixed YAML syntax)
 
 name: Sample Craft Plugin
 handle: sample-craft-plugin
 type: plugin
 schemaVersion: 1.0.0
-php: 8.2  # ✅ Required field
+php: 8.2  # Required by Craft Cloud
 
 environments:
   production:
     baseUrl: "https://example.com"
     database:
-      driver: mysql
-      server: 127.0.0.1
-      user: root
-      password: secret
-      database: craft_cloud_prod
+      driver: "mysql"
+      server: "127.0.0.1"
+      user: "root"
+      password: "secret"
+      database: "craft_cloud_prod"
     redis:
-      hostname: 127.0.0.1
+      hostname: "127.0.0.1"
       port: 6379
       password: null
   staging:
     baseUrl: "https://staging.example.com"
     database:
-      driver: mysql
-      server: 127.0.0.1
-      user: root
-      password: secret
-      database: craft_cloud_staging
+      driver: "mysql"
+      server: "127.0.0.1"
+      user: "root"
+      password: "secret"
+      database: "craft_cloud_staging"
 
 craft:
   timezone: "Asia/Kolkata"
@@ -39,4 +39,11 @@ plugin:
   description: "A sample plugin demonstrating Craft Cloud configuration."
   developer: "testtest"
   developerUrl: "https://github.com/testtest/sample-craft-plugin"
-  documentationUrl: "https://github.com/testtest/sample
+  documentationUrl: "https://github.com/testtest/sample-craft-plugin/README.md"
+  changelogUrl: "https://github.com/testtest/sample-craft-plugin/CHANGELOG.md"
+
+deployment:
+  autoMigrate: true
+  backupBeforeDeploy: true
+  syncAssets: true
+  clearCachesAfterDeploy: true
