@@ -1,11 +1,14 @@
 # craft-cloud.yaml
-# Valid Craft Cloud configuration file (fixed YAML syntax)
+# Working version with required php field
 
 name: Sample Craft Plugin
 handle: sample-craft-plugin
 type: plugin
 schemaVersion: 1.0.0
-php: 8.2  # Required by Craft Cloud
+
+# Required PHP version
+php:
+  version: 8.2
 
 environments:
   production:
@@ -39,11 +42,4 @@ plugin:
   description: "A sample plugin demonstrating Craft Cloud configuration."
   developer: "testtest"
   developerUrl: "https://github.com/testtest/sample-craft-plugin"
-  documentationUrl: "https://github.com/testtest/sample-craft-plugin/README.md"
-  changelogUrl: "https://github.com/testtest/sample-craft-plugin/CHANGELOG.md"
-
-deployment:
-  autoMigrate: true
-  backupBeforeDeploy: true
-  syncAssets: true
-  clearCachesAfterDeploy: true
+  documentationUrl: "https://github.com/testtest/sample-craft
