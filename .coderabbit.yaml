@@ -1,10 +1,10 @@
 review:
-  mode: auto  # other options: manual, smart
-  languages:
-    - python
+  mode: auto
+  languages: [python, javascript]
   exclude:
-    - tests/
     - migrations/
-commenting:
-  style: inline
-  summarize: true
+    - legacy_code/
+learn:
+  enable: true
+  scope: team
+  
